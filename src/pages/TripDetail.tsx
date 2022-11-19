@@ -56,7 +56,7 @@ const TripDetail: React.FC = () => {
             <IonHeader>
                 <IonToolbar color="red" >
                      <IonButtons slot="start">
-                        <IonBackButton defaultHref="/viewAllTrips" color="blue" text="<<<" icon="buttonIcon" />
+                        <IonBackButton defaultHref="/viewAllTrip" color="blue" text="<<<" icon="buttonIcon" />
                     </IonButtons>
                     <IonTitle>Detail Of Trip </IonTitle>
                 </IonToolbar>
@@ -97,8 +97,7 @@ const TripDetail: React.FC = () => {
                     <IonInput disabled value={risk}></IonInput>
                 </IonItem>
 
-                <IonButton routerLink={'/viewAllTrips'} onClick={handlerOfDelete} class='ion-margin'>Remove</IonButton>
-
+                <IonButton routerLink={'/viewAllTrip'} onClick={handlerOfDelete} class='ion-margin'>Remove</IonButton>
             </IonContent>
         </IonPage>
     );

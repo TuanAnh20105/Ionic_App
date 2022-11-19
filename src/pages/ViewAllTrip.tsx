@@ -5,7 +5,7 @@ import { Trip } from '../model/Trip';
 import './Home.css';
 
 
-const ViewAllTrips: React.FC = () => {
+const ViewAllTrip: React.FC = () => {
   const [allTrips, setAllTrips] = useState<Trip[]>([]);
   const handlerOfDelete = async () =>{
     const res = await deleteTripAll();
@@ -53,11 +53,11 @@ const fetchData = async () => {
                       </IonList>
                   </IonItem>
               </IonContent>
-              <IonButton routerLink={'/viewAllTrips'} onClick={handlerOfDelete} class='ion-margin'>Remove All</IonButton>
+              <IonButton routerLink={'/viewAllTrip'} onClick={handlerOfDelete} class='ion-margin'>Remove All</IonButton>
           </IonPage >
       </IonContent>
       
   );
 };
 
-export default ViewAllTrips;
+export default ViewAllTrip;

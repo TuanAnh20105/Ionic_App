@@ -108,7 +108,7 @@ const Home: React.FC = () => {
           </IonSelect>
         </IonItem>
         <IonButton onClick={saveData} expand='block' class='ion-margin'>Save</IonButton>
-        <IonButton   routerLink={'/viewAllTrips'} expand='block' class='ion-margin' color="success" >View all Trip</IonButton>
+        <IonButton   routerLink={'/viewAllTrip'} expand='block' class='ion-margin' color="success" >View all Trip</IonButton>
       </IonContent>
     </IonPage>
   );
